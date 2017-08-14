@@ -11,7 +11,7 @@ a{
 .App {
   text-align: center;
   /* background:#596981; */
-  background:#6ddce4;;
+  background:#67aaf9;
   background-size: cover;
   position:fixed;
   top: 0;
@@ -34,16 +34,15 @@ a{
   position:absolute;
   top:0;
   right:0;
-  color:#00CCB4;
 }
 .usernmae>span{
-  color:#fff;
+  color:#000;
 }
 .App-header>h1{
-  color:#00CCB4;
+  color:#fff;
 }
 .App-header>p{
-  color: #fff;
+  color: #ccc;
 }
 .App-content{
   width: 100%;
