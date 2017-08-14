@@ -1,11 +1,11 @@
 .TodoInput{
   width:70%;
   height:45px;
-  border:2px solid #00ffe2;
+  border:2px solid #ffe083;
   border-radius: 6px;
   font-size: 25px;
-  color:#fff;
-  background:rgba(68, 66, 66, 0.6);
+  color:#016a86;
+  background:#fff;
   text-align: center;
   margin:0 auto;
 }

@@ -34,14 +34,12 @@ a{
   position:absolute;
   top:0;
   right:0;
-}
-.usernmae>span{
-  color:#000;
+  color: #f4f1e8;
 }
 .App-header>h1{
   color:#fff;
 }
-.App-header>p{
+.title-p{
   color: #ccc;
 }
 .App-content{

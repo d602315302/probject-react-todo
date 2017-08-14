@@ -1,14 +1,14 @@
 .TodoItem{
     width:80%;
     margin:5px auto;
-    background:rgba(160, 178, 184, 0.2);
+    background:rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     list-style: none;
     text-align: center;
     display: inline-block;
     text-align: left;
     font-size: 30px;
-    color:#fff;
+    color:#f4f1e8;
     text-overflow: ellipsis;
     overflow: hidden;
     padding:5px;
