@@ -2,6 +2,7 @@
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://d602315302.github.io/probject-react-todo/build",
   "dependencies": {
     "jquery": "^3.2.1",
     "leancloud-storage": "^3.0.4",
