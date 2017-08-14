@@ -1,0 +1,27 @@
+.TodoItem{
+    width:80%;
+    margin:5px auto;
+    background:rgba(160, 178, 184, 0.2);
+    border-radius: 6px;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+    font-size: 30px;
+    color:#fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding:5px;
+}
+.date{
+    float: right;
+    font-size: 20px;
+    line-height: 40px;
+}
+img{
+    width:20px;
+    float: right;
+    margin-top:10px;
+    margin-left:10px;
+    cursor: pointer;
+}

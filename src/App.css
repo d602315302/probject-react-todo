@@ -1,0 +1,80 @@
+ul,ol,li{
+  list-style: none;
+}
+
+ol{
+  padding-left:0;
+}
+a{
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+  /* background:#596981; */
+  background:url('./img/AppBackground.jpg')no-repeat;
+  background-size: cover;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.App-wrapper{
+  width:90%;
+  margin:0 auto;
+}
+.App-header {
+  height: 100px;
+  padding:20px;
+  color: white;
+  border-bottom: 1px solid #75859c;
+  position:relative;
+}
+.username{
+  position:absolute;
+  top:0;
+  right:0;
+  color:#00CCB4;
+}
+.usernmae>span{
+  color:#fff;
+}
+.App-header>h1{
+  color:#00CCB4;
+}
+.App-header>p{
+  color: #fff;
+}
+.App-content{
+  width: 100%;
+  max-height:100%
+}
+.content{
+  box-sizing: border-box;
+  width:70%;
+  margin:50px auto;
+}
+.todos{
+  width:100%;
+  max-height:460px;
+  overflow:auto;
+}
+.todos::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+}
+.todos::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+.todos::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+}
+.demo::-webkit-scrollbar-button {
+	background-color: #888;
+	display: none;
+}
+.exit{
+  margin-top: 2px;
+}
