@@ -39,7 +39,7 @@ onInput(e){
   var _this=e.target
   if(_this.value === ''){
       $(_this).parent().find('.inputTitle').animate({
-        'top':'8px',
+        'top':'12px',
         'font-size':'12px'
         },150)
     }
