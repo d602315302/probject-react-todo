@@ -11,14 +11,14 @@ export default class SignInForm extends React.Component {
     return (
       <form className="signIn" onSubmit={this.props.onSubmit} > {/* 登录*/}
         <div className="row">
-          <label className="inputTitle">用户名</label>
-          <input type="text" value={this.props.formData.username}
+          <label className="inputTitle" onClick={this.move.bind(this)}>用户名</label>
+          <input className="aa" type="text" value={this.props.formData.username}
                  onChange={this.props.onChange.bind(null,'username')}
                  onFocus={this.onInput.bind(this)}
                  onBlur={this.outInput.bind(this)}/>
         </div>
         <div className="row">
-          <label className="inputTitle">密码</label>
+          <label className="inputTitle" onClick={this.move.bind(this)}>密码</label>
           <input type="password" value={this.props.formData.password}
                  onChange={this.props.onChange.bind(null,'password')}
                  onFocus={this.onInput.bind(this)}
@@ -34,40 +34,28 @@ export default class SignInForm extends React.Component {
   )
   }
 onInput(e){
- var _this=e.target
+  var _this=e.target
   if(_this.value === ''){
       $(_this).parent().find('.inputTitle').animate({
-        'top':'15px',
-        'font-size':'12px',
-        },500)
-      $(_this).animate({
-        'border-bottom':'3px solid #ccc'
-      },1000)
+        'top':'8px',
+        'font-size':'12px'
+        },150)
     }
   }
   outInput(e){
     var _this=e.target
-    if(_this.value!==''){
+    if($(_this).val()===''){
       $(_this).parent().find('.inputTitle').animate({
-        'top':'15px',
-        'font-size':'12px',
-        },500)
-    }else{
-      $(_this).parent().find('.inputTitle').animate({
-        'top':'30px',
-        'font-size':'16px',
-        },500)
+         'top':'30px',
+         'font-size':'16px'
+         },150)
     }
   }
-// submit(e){
-//   var _this=e.target
-//   let stateCopy=JSON.parse(JSON.stringify(this.state))
-//   $(_this).text('')
-//   $(_this).animate({
-//     'background':'transparent',
-//     'width':'30px'
-//   },200,function(){
-//     $('.signIn').attr('onSubmit',stateCopy.submit)
-//   })
-// }
+
+  move(e){    
+    console.log(e.button)
+    var _this=e.target;
+    var input=$(_this).parent().find('input')
+    if(input.focus()){return}
+  }
 }

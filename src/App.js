@@ -38,7 +38,7 @@ class App extends Component {
         <div className="App-wrapper">
           <header className="App-header">
           <h1>添写你的备忘录</h1>
-          <p>用心完成每一件小事...</p>
+          <p className="title-p">用心完成每一件小事...</p>
           <p className="username"><span>欢迎，</span> {this.state.user.username}
             {this.state.user.id ? <img className="exit" src={Exit} onClick={this.signOut.bind(this)}/> : null}
           </p>
